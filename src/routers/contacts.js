@@ -4,7 +4,8 @@ import isValidId from '../middlewares/isValidId.js';
 import authenticate from "../middlewares/authenticate.js";
 import ctrlWrapper from "../utils/ctrlWrapper.js";
 import validateBody from "../utils/validateBody.js";
-import { contactAddSchema, contactPatchSchema } from '../validation/contacts.js'
+import { contactAddSchema, contactPatchSchema } from '../validation/contacts.js';
+import { upload } from '../middlewares/multer.js';
 
 const contactsRouter = Router();
 
