@@ -19,6 +19,7 @@ export const startServer = () => {
 	app.use(cors()); // корототкий запис створення і використання мідлвару CORS
 	app.use(express.json());
 	app.use(cookieParser());
+	app.use(express.static("uploads"));
 
 
 	// routes;
